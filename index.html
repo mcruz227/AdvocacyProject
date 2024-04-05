@@ -2,49 +2,64 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YouthConnect</title> <!-- the content here will only show in the tab and in the metadata about the page -->
-  <link rel="icon" href="img/hearts.jpeg">
-
-  <style>
-    body {
-      background-color: mintcream
-    }
-
-    h3 {
-      font-style: italic
-    }
-  </style>
-
+  <link rel="icon" href="img/pplGlobe.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#petition">Petition</a></li>
+      <li><a href="#news">News</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+  </div>
+
 
   <!--- Headings --->
-  <img />
-  <!-- if you want to add an image, use this tag and link to the actual image location in your project with the src attribute -->
-  <h1>YouthConnect</h1>
-  <h3>Youth United: Building Bonds, Creating Futures.</h3>
-  <button type="button"> Join now</button>
-  <button type="button">Get Involved</button>
 
+  <div class="header-container">
+    <div class="header-item">
+      <img src="img/pplGlobe.png" id="header-img" class="small-image" alt="people surrounding globe">
+    </div>
+    <div class="header-item">
+      <h1>YouthConnect</h1>
+      <div>
+        <p style="text-align: center">Youth United: Building Bonds, Creating Futures.</p>
+      </div>
+
+      <div class="header-button">
+        <button type="button"> Join now</button>
+        <button type="button">Get Involved</button>
+      </div>
+    </div>
+  </div>
 
 
   <!--- About --->
-  <h2>About Community Building</h2>
-  <p>The problem this
-    website tackles is that many young people feel left out and disconnected from their communities. This can make it
-    tough to find places where we feel like we belong or where we can speak up about what matters to us. But our site is
-    all about changing that! It's a cool platform where kids can create their own spaces, share their favorite hangouts,
-    chat about local events, and even start projects to make a difference in their communities. It's all about giving
-    youth a voice and a place where they feel heard and valued.
-  </p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/VvdQ381K5xg?si=qSMwBYVwb4UTkruW"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen></iframe>
+  <div id="about" class="revealable">
+    <h2>About Community Building</h2>
+    <p>The problem this
+      website tackles is that many young people feel left out and disconnected from their communities. This can make it
+      tough to find places where we feel like we belong or where we can speak up about what matters to us. But our site
+      is
+      all about changing that! It's a cool platform where kids can create their own spaces, share their favorite
+      hangouts,
+      chat about local events, and even start projects to make a difference in their communities. It's all about giving
+      youth a voice and a place where they feel heard and valued.
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VvdQ381K5xg?si=qSMwBYVwb4UTkruW"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
 
-
-  <!--- Data --->
+  <!--- Data 
 
   <h3>Data about my topic</h3>
   <img src="" />
@@ -57,49 +72,112 @@
     <li> 35%-45%</li>
     <li> >45%</li>
   </ul>
+  --->
+
   <!--- Impact --->
-  <h2>Impact!</h2>
-
-  <img src="img/byself.jpeg" />
-  <h3>Where can this problem have lasting effects?</h3>
-  <p>
-    <class=caption /> Without inclusive community spaces, young people may struggle to connect with others, leading to
-    feelings of
-    loneliness and disconnection.
-  </p>
-
-  <img src="img/groupSkate.jpeg" />
-  <h3>Where else can this problem have lasting effects?</h3>
-  <p> In social settings, the absence of inclusive spaces can lead to exclusion and disconnection among youth.
-  </p>
-
-  <!--- <img src="" />
-  <h3> Where else else can this problem have lasting effects?</h3>
-  <p>Why?
-  </p> --->
+  <div id="impact" class="revealable">
+    <h2>Impacts of '3rd places'</h2>
+    <div class="impact-content">
+      <div class="impact-item">
+        <img src="img/byself.jpeg" alt="Image 1">
+        <h3>Connection</h3>
+        <p class="caption">Without inclusive community spaces, young people may struggle to connect with others, leading
+          to feelings of loneliness and disconnection.</p>
+      </div>
+      <div class="impact-item">
+        <img src="img/groupSkate.jpeg" alt="Image 2">
+        <h3>In Social Settings</h3>
+        <p class="caption">The absence of inclusive spaces can lead to exclusion and disconnection
+          among youth.</p>
+      </div>
+    </div>
+  </div>
 
 
-  <!--- News --->
-  <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
-  <h2>Articles/Other Links</h2>
 
-  <a class="" href="https://www.businessinsider.com/teen-bans-curfews-malls-theme-parks-chick-fil-a-2023-4">
-    <article>
-      <h3> Teen bans on the rise: malls, theme parks, and even a Chick-fil-A are requiring chaperones to stop rowdy
-        minors </h3>
-      <p></p>
-    </article>
 
-    <a class=""
-      href="https://www.smithsonianmag.com/smart-news/an-epidemic-of-loneliness-threatenes-health-of-americans-surgeon-general-says-180982142/">
-      <article>
-        <h3> An ‘Epidemic’ of Loneliness Threatens Health of Americans, Surgeon General Says</h3>
-        <p></p>
-      </article>
+  <!-- petition section-->
+  <div class="petition revealable" id="petition">
 
+    <h2>Sign Our Petition 📢</h2>
+    <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+
+    <div class="petition-container">
+      <div class="petition-funding">
+        <!-- info goes here -->
+        <p>There is power in young people to drive positive change in their communities. We
+          call upon local governments, organizations, and policymakers to prioritize funding and support for
+          youth-centered community initiatives. By investing in programs that empower young people to create inclusive
+          spaces, share their voices, and take action on issues that matter to them, we can build stronger, more vibrant
+          communities for all.</p>
+        <p> Sign this petition to show your support for increased funding and resources for youth community initiatives
+        </p>
+      </div>
+
+      <div class="signatures">
+        <p>🖊️ Elsa from Miami supports this.</p>
+        <p>🖊️ Amy from Orlando supports this.</p>
+        <p>🖊️ Teresa from Coral Gables supports this.</p>
+      </div>
+
+    </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <!-- inputs go here -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="hometown">Hometown:</label>
+      <input type="text" id="hometown" name="hometown" required>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+    </form>
+
+    <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+
+  </div>
+
+
+  <!--- News -->
+  <div id="news" class="revealable">
+    <h2>Articles/Other Links</h2>
+    <ul>
+      <li> <a class="  " href="https://www.businessinsider.com/teen-bans-curfews-malls-theme-parks-chick-fil-a-2023-4">
+          <article>
+            <h3> Teen bans on the rise: malls, theme parks, and even a Chick-fil-A are requiring chaperones to stop
+              rowdy
+              minors </h3>
+            <p></p>
+          </article>
+      </li>
+      <li>
+        <a class=""
+          href="https://www.smithsonianmag.com/smart-news/an-epidemic-of-loneliness-threatenes-health-of-americans-surgeon-general-says-180982142/">
+          <article>
+            <h3> An ‘Epidemic’ of Loneliness Threatens Health of Americans, Surgeon General Says</h3>
+            <p></p>
+          </article>
+      </li>
+    </ul>
 
     </a>
+  </div>
 
+  <!--footer -->
+  <div class="footer">
+
+    <a href="https://www.learningforjustice.org/frameworks/digital-literacy">
+      Learn Digital Literacy
+    </a>
+    ||
+    <a href="https://staysafeonline.org/online-safety-privacy-basics/can-education-help-students-stay-safe-online/">
+      Internet Safety Tips
+    </a>
+  </div>
+
+
+  <script src="index.js"></script>
 
 </body>
 

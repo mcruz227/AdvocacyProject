@@ -1,9 +1,297 @@
-html {
-  height: 100%;
-  width: 100%;
+body {
+  background-color: teal;
+  font-family: Open Sans;
+  color: white;
+  line-height: 1.6;
+  padding: 60px;
+  margin: 20px;
 }
 
- img {
-max-width: 100%;
-height: auto;
- }
+/*navigation bar rules */
+
+.navbar ul {
+  background-color: teal;
+  list-style-type: none;
+  overflow: hidden;
+  position: z-index;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  min-height: 50px;
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+}
+
+.navbar ul li {
+  float: left;
+  margin: 10px;
+}
+
+.navbar ul li a {
+  font-family: open sans;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 12px 16px;
+  text-align: center;
+  display: flex;
+
+}
+
+.navbar ul li a:hover {
+  font-weight: bold;
+  background-color: darkorange;
+  color: white;
+}
+
+
+/* headers rules */
+
+.header-container {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+.header-item:nth-of-type(1) {
+  width: 50%;
+
+}
+
+.header-item:nth-of-type(2) {
+  width: 50%;
+}
+
+h1 {
+  color: orange;
+  margin: 10px;
+  font-size: 90px;
+
+}
+
+h2 {
+  color: orange;
+  font-size: 32px;
+
+}
+
+h3 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+h1,
+h2,
+h3 {
+  text-shadow: 2px 2px 0 black;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  text-align: left;
+}
+
+
+/* links, images */
+a {
+  text-decoration: none;
+  color: teal;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid teal;
+}
+
+#header-img {
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: 200px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: orange;
+  text-align: center;
+  padding: 5px;
+  z-index: 1000;
+  border: solid 1px transparent;
+
+
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  border-bottom: 1px solid transparent;
+}
+
+.footer a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+
+/* button rules */
+
+.header-button button {
+  background-color: orange;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+
+.header-button button:hover {
+  background-color: darkorange;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#theme-button {
+  background-color: orange;
+  color: white;
+  text-decoration: underline;
+  font: arial;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid transparent;
+  border-width: auto;
+  font-size: 16px;
+
+}
+
+.dark-mode #theme-button {
+  background-color: orange;
+  color: white;
+}
+
+#theme-button:hover {
+  background-color: darkorange;
+}
+
+.dark-mode .footer a {
+  color: white;
+}
+
+.dark-mode .nav-bar ul {
+  background-color: black;
+  color: white;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+
+}
+
+.petition-funding {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
+
+
+
+#news ul li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+  text-align: left;
+}
+
+#news ul li a:hover {
+  text-decoration: underline;
+}
+
+#impact {
+  color: white;
+}
+
+.impact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.impact-item {
+  width: calc(50% - 10px);
+  text-align: center;
+}
+
+.impact-item img {
+  margin-left: 10px;
+  margin-right: 20px;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+.caption {
+  color: white;
+  font-weight: bold;
+}
+
+#about,
+#impact,
+#petition,
+#news {
+  text-align: center;
+  padding: 30px;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+
+}
